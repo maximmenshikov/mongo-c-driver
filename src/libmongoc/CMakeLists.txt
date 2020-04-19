@@ -649,7 +649,7 @@ if (NOT ENABLE_SSL STREQUAL OFF)
          ${PROJECT_SOURCE_DIR}/src/mongoc/mongoc-stream-tls-secure-channel.c
          ${PROJECT_SOURCE_DIR}/src/mongoc/mongoc-secure-channel.c
       )
-      set (SSL_LIBRARIES secur32.lib crypt32.lib Bcrypt.lib)
+      set (SSL_LIBRARIES secur32.lib crypt32.lib bcrypt.lib)
    elseif (LIBRESSL)
       message (STATUS "Compiling against LibreSSL")
       set (SOURCES ${SOURCES}
@@ -675,7 +675,7 @@ if (MONGOC_ENABLE_SASL)
       message (STATUS "Compiling against Windows SSPI")
       set (SOURCES ${SOURCES} ${PROJECT_SOURCE_DIR}/src/mongoc/mongoc-cluster-sspi.c)
       set (SOURCES ${SOURCES} ${PROJECT_SOURCE_DIR}/src/mongoc/mongoc-sspi.c)
-      set (SASL_LIBRARIES secur32.lib crypt32.lib Shlwapi.lib)
+      set (SASL_LIBRARIES secur32.lib crypt32.lib shlwapi.lib)
    endif ()
 else ()
    message (STATUS "SASL disabled")

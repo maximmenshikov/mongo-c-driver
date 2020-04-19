@@ -2,7 +2,7 @@ include (CheckSymbolExists)
 
 if (ENABLE_SRV STREQUAL ON OR ENABLE_SRV STREQUAL AUTO)
    if (WIN32)
-      set (RESOLV_LIBRARIES Dnsapi)
+      set (RESOLV_LIBRARIES dnsapi)
       set (MONGOC_HAVE_DNSAPI 1)
       set (MONGOC_HAVE_RES_NSEARCH 0)
       set (MONGOC_HAVE_RES_NDESTROY 0)
