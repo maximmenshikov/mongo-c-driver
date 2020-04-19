@@ -19,8 +19,8 @@
 #include "mongoc-config.h"
 #ifdef MONGOC_HAVE_DNSAPI
 /* for DnsQuery_UTF8 */
-#include <Windows.h>
-#include <WinDNS.h>
+#include <windows.h>
+#include <windns.h>
 #include <ws2tcpip.h>
 #else
 #if defined(MONGOC_HAVE_RES_NSEARCH) || defined(MONGOC_HAVE_RES_SEARCH)

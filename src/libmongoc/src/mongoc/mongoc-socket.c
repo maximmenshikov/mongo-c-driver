@@ -25,7 +25,7 @@
 #include "mongoc-socket-private.h"
 #include "mongoc-trace-private.h"
 #ifdef _WIN32
-#include <Mstcpip.h>
+#include <mstcpip.h>
 #include <process.h>
 #endif
 
