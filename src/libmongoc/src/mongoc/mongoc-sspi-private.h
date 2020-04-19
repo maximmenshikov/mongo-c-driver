@@ -28,7 +28,7 @@ BSON_BEGIN_DECLS
 
 #define SECURITY_WIN32 1 /* Required for SSPI */
 
-#include <Windows.h>
+#include <windows.h>
 #include <limits.h>
 #include <sspi.h>
 #include <string.h>
